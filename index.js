@@ -8,13 +8,10 @@ function driversWithRevenueOver(drivers, revenue) {
 }
 
 function driverNamesWithRevenueOver(drivers, revenue) {
-  return drivers.map(function(i) {
-    const newArr = [];
-    if (i.revenue > revenue) {
-      newArr.push(i.name);
-    };
-    return newArr
-  });
+  newArr = driversWithRevenueOver(drivers, revenue);
+  return newArr.map(function(i) {
+    return i.name
+  })
 }
 
 function exactMatch() {

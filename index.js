@@ -9,9 +9,11 @@ function driversWithRevenueOver(drivers, revenue) {
 
 function driverNamesWithRevenueOver(drivers, revenue) {
   return drivers.map(function(i) {
+    const newArr = [];
     if (i.revenue > revenue) {
-      return i.name;
+      newArr.push(i.name);
     };
+    return newArr
   });
 }
 

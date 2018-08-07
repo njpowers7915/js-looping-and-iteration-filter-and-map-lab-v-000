@@ -10,7 +10,7 @@ function driversWithRevenueOver(drivers, revenue) {
 function driverNamesWithRevenueOver(drivers, revenue) {
   return drivers.filter(function(i) {
     if (i.revenue > revenue) {
-      return i.filter(function(x) {return x.name});
+      return i.name;
     };
   });
 }

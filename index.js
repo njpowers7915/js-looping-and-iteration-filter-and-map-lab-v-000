@@ -31,5 +31,8 @@ function exactMatch(drivers, object) {
 }
 
 function exactMatchToList() {
-
+  newArr = exactMatch(drivers, object);
+  return newArr.map(function(i) {
+    return i.name
+  })
 }

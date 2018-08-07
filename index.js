@@ -29,13 +29,6 @@ function exactMatch(drivers, object) {
     })
   }
 }
-  
-  return drivers.filter(function(i) {
-    if (i.revenue > revenue) {
-      return i;
-    };
-  });
-}
 
 function exactMatchToList() {
 
